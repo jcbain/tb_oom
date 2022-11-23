@@ -27,8 +27,8 @@ services:
         - ln -snf "${TUGBOAT_ROOT}" "${DOCROOT}"
       update:
         - cd "${TUGBOAT_ROOT}/frontend_new" && npm install
-        - cd "${TUGBOAT_ROOT}/frontend_new" && npm run build
       build:
+        - cd "${TUGBOAT_ROOT}/frontend_new" && npm run build
         - mkdir -p /var/www/html
         - cp "${TUGBOAT_ROOT}/nginx.conf" /etc/nginx/conf.d/default.conf
         - cp -r "${TUGBOAT_ROOT}/frontend_new/build/." /var/www/html
