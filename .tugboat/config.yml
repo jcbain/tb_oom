@@ -18,4 +18,5 @@ services:
         - cd "${TUGBOAT_ROOT}/frontend_new" && npm install
         - cd "${TUGBOAT_ROOT}/frontend_new" && npm run build
       build:
-        - cp "${TUGBOAT_ROOT}/frontend_new/build/." /var/www/html
+        - mkdir -p /var/www/html
+        - cp -r "${TUGBOAT_ROOT}/frontend_new/build/." /var/www/html
