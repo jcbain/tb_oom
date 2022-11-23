@@ -4,6 +4,7 @@ services:
     image: tugboatqa/nginx
     urls:
       - /
+      - /about
 
     # A set of commands to run while building this service
     commands:
