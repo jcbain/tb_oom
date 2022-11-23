@@ -12,3 +12,6 @@ services:
         # Link the document root to the expected path. This example links the
         # root of the git repository to the docroot
         - ln -snf "${TUGBOAT_ROOT}" "${DOCROOT}"
+      update:
+        - cd "${TUGBOAT_ROOT}/frontend_new" && npm install
+        - npm build "${TUGBOAT_ROOT}/frontend_new"
