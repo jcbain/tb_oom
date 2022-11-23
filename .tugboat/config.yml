@@ -1,7 +1,9 @@
 services:
-  apache:
+  nginx:
     # Use the available version of Apache by not specifying a version
     image: tugboatqa/nginx
+    urls:
+      - /
 
     # A set of commands to run while building this service
     commands:
@@ -15,3 +17,5 @@ services:
       update:
         - cd "${TUGBOAT_ROOT}/frontend_new" && npm install
         - cd "${TUGBOAT_ROOT}/frontend_new" && npm run build
+      build:
+        - cp "${TUGBOAT_ROOT}/frontend_new/build/." /var/www/html
