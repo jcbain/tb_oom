@@ -5,6 +5,16 @@ services:
     urls:
       - /
       - /about
+      - /info
+      - /food
+      - /refrigerator
+      - /calendar
+      - /dogfood
+      - /killerwhales
+      - /blog
+      - /cv
+      - /purple
+      - /lolwut
 
     # A set of commands to run while building this service
     commands:
