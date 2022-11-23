@@ -2,12 +2,12 @@ import React from "react";
 
 import { Wrapper, Content, Title } from "./styles";
 
-const Home = () => (
+const Info = () => (
   <Wrapper>
     <Content>
-      <Title>Home</Title>
+      <Title>Info</Title>
     </Content>
   </Wrapper>
 );
 
-export default Home;
+export default Info;
