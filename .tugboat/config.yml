@@ -14,4 +14,4 @@ services:
         - ln -snf "${TUGBOAT_ROOT}" "${DOCROOT}"
       update:
         - cd "${TUGBOAT_ROOT}/frontend_new" && npm install
-        - npm run build "${TUGBOAT_ROOT}/frontend_new"
+        - cd "${TUGBOAT_ROOT}/frontend_new" && npm run build
