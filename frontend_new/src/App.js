@@ -1,10 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 
+import Home from "./components/Home";
 import FourOhFour from "./components/FourOhFour";
 
 function App() {
   return (
     <Routes>
+      <Route path="/" element={<Home />} />
       <Route path="*" element={<FourOhFour />} />
     </Routes>
   );
