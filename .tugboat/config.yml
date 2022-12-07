@@ -2,6 +2,8 @@ services:
   nginx:
     # Use the available version of Apache by not specifying a version
     image: tugboatqa/nginx
+    visualdiff:
+      threshold: 99
     urls:
       - /
       - /about
