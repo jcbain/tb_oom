@@ -12,6 +12,7 @@ export default createGlobalStyle`
     */
     * {
         margin: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     /*
     3. Allow percentage-based heights in the application

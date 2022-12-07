@@ -2,12 +2,12 @@ import React from "react";
 
 import { Wrapper, Content, Title } from "./styles";
 
-const Home = () => (
+const KillerWhales = () => (
   <Wrapper>
     <Content>
-      <Title>Home</Title>
+      <Title>Killer Whales</Title>
     </Content>
   </Wrapper>
 );
 
-export default Home;
+export default KillerWhales;
